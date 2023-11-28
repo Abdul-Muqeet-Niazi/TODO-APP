@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+
+      <div class="signup">
+        <form>
+          <label for="chk" aria-hidden="true">Sign up</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            id="sEmail"
+            class="email"
+          />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            id="sPass"
+            class="pass"
+          />
+          <button id="sButton" class="button">SignUp</button>
+        </form>
+      </div>
+
+      <div class="login">
+        <form>
+          <label for="chk" aria-hidden="true">Login</label>
+          <input type="email" name="email" placeholder="Email" id="LEmail" />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            id="LPass"
+          />
+          <button id="LButton" href="./Todo.html">LOGIN</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup hidden">
+      <button class="close-modal">&times;</button>
+      <p class="welcome">Welcome User!</p>
+      <img src="https://emaillistvalidation.com/blog/content/images/size/w260/2023/03/1-31.png" alt="" class="image">
+    </div>
+
+    <div class="error hidden2">
+      <button class="close-modal2">&times;</button>
+      <p class="error-para">Already in use</p>
+      <img src="https://png.pngtree.com/png-vector/20191127/ourmid/pngtree-error-page-not-found-concept-illustration-flat-design-with-people-this-png-image_2038499.jpg" alt="" class="image2">
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

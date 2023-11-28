@@ -1,0 +1,216 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, #659999 , #f4791f);
+    font-family: 'Nunito', sans-serif;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4em;
+    background-color: #231f1e;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    z-index: -1;
+  }
+  .eyes-wrapper {
+    display: flex;
+  }
+  .eyes-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 26em;
+    height: 6em;
+    background-color: #a8a7ac;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 7.3%;
+    /* bottom: 0; */
+    z-index: -1;
+  }
+  .eye {
+    width: 10em;
+    height: 10em;
+    border: 15px solid #a6a4ad;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .eyeball {
+    height: 3.2em;
+    width: 3.2em;
+    background: radial-gradient(#271e1e 35%, #935a29 37%);
+    border-radius: 50%;
+    margin: 0.2em 3.5em;
+    position: relative;
+  }
+  .eyeball:before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 0.7em;
+    width: 0.5em;
+    border-radius: 50%;
+    top: 13px;
+    left: 13px;
+    transform: rotate(45deg);
+  }
+
+  /* .container-todo {
+    background: #557773;
+    border-radius: 3px;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    position: absolute;
+    top: 35%;
+    padding: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+    backdrop-filter: blur(500%);
+  } */
+
+  .todo {
+    margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Jost', sans-serif;
+    position: absolute;
+    top: 35%;
+    right: 40%;
+  }
+
+  .todoInp {
+
+    height: 30px;
+	background: #eee;
+	border-radius: 5px;
+    border-style: hidden;
+    /* width: 30rem; */
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .add {
+    font-size: 23px;
+    height: 50%;
+    margin: 2%;
+    background-color: #557773;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #eee;
+    border-style: solid;
+    cursor: pointer;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .delete-All {
+    width: 200%;
+    margin: 1%;
+    background-color: #557773;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #eee;
+    border-style: solid;
+    cursor: pointer;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .Ul-container {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    top: 45%;
+    left: 20%;
+    
+  }
+
+  .Ul {
+   display: grid;
+   list-style: none;
+
+  }
+
+  li {
+    width: 114%;
+    height: 60px;
+    line-height: 22px;
+    border-style: none;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: #b4b2b2;
+    padding-left: 5px;
+  }
+
+  .delete {
+    margin-left: 365px;
+    height: 30px;
+	border-radius: 5px;
+    border-width: 1px;
+    border-color: #eee;
+    border-style: solid;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(230, 81, 81);
+    font-family: 'Nunito', sans-serif;
+  }
+  .edit {
+    margin-left: 20px;
+    height: 30px;
+	border-radius: 5px;
+    border-width: 1px;
+    border-color: #eee;
+    border-style: solid;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(53, 121, 138);
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .hidden3 {
+    display: none;  
+  }
+
+
+  .image3 {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    
+  }
+
+  .popup-para2 {
+    background-color: white;
+    width: 100%;
+  }
+  .container-popup{
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+  }
+  .close-modal2 {
+    position: absolute;
+    bottom: -460%;
+    right: 40%;
+    z-index: 1;
+    width: 20%;
+    font-size: 15px;
+    background-color: #557773;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }

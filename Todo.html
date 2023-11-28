@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <div class="size-container">
+      <div class="container">
+        <div class="eyes-wrapper">
+          <div class="eye">
+            <div class="eyeball"></div>
+          </div>
+          <div class="eye">
+            <div class="eyeball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-todo"></div>
+    <div class="todo">
+      <input type="text" id="getInp" class="todoInp" />
+      <button id="gettodo" class="add">+</button>
+      <button onclick="delAll()" class="delete-All">DELETE ALL</button>
+    </div>
+    <div class="Ul-container">
+      <ul id="getUL" class="Ul"></ul>
+    </div>
+
+    <div class="container-popup">
+      <div class="popup3 hidden3">
+        <button class="close-modal2">OK</button>
+        <p class="popup-para2">Your work has been added to the list !</p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo8Zbvzu9bZIB4syoakTvTGEd54LBgtdPhwOHKO9Sbk4F1HWwIrMJEp5BSMFGeiWN0gMY&usqp=CAU"
+          alt=""
+          class="image3"
+        />
+      </div>
+    </div>
+    
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
